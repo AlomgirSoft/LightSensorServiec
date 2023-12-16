@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lightSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Light Sensor"
+        android:textColor="#4DB0FF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Proximity Sensor"
+        android:textColor="#4DB0FF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lightSensor"
+        app:layout_constraintStart_toStartOf="@+id/lightSensor"
+        app:layout_constraintTop_toBottomOf="@+id/lightSensor" />
+
+    <TextView
+        android:id="@+id/accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Accelerometer"
+        android:textColor="#4DB0FF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/proximity"
+        app:layout_constraintStart_toStartOf="@+id/proximity"
+        app:layout_constraintTop_toBottomOf="@+id/proximity" />
+
+    <TextView
+        android:id="@+id/gyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gyroscope"
+        android:textColor="#4DB0FF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/accelerometer"
+        app:layout_constraintStart_toStartOf="@+id/accelerometer"
+        app:layout_constraintTop_toBottomOf="@+id/accelerometer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
